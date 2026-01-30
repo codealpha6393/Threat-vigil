@@ -52,7 +52,9 @@ The folder structure follows the standard Go project layout:
   └── adapter               # 🔌 The "Plugs" (Infrastructure)
       ├── handler           # HTTP Handlers (Gin Routes)
       └── repository        # Database Implementation (In-Memory)
-⚡ API Endpoints
+```
+## ⚡ API Endpoints
+```
 1️⃣ Report an Incident
 POST /incidents
 Ingests a new security threat log.
@@ -75,7 +77,9 @@ Retrieves a list of all recorded threats.
 
 Optional Query Parameters
 ?severity=CRITICAL
-🔧 Installation & Setup Guide
+```
+## 🔧 Installation & Setup Guide
+```
 Prerequisites
 Go 1.21 or higher installed
 
@@ -97,7 +101,9 @@ Invoke-RestMethod `
   -Uri "http://localhost:8080/incidents" `
   -ContentType "application/json" `
   -Body '{"type":"XSS Attack", "severity":"HIGH"}'
-🔮 Roadmap
+```
+## 🔮 Roadmap
+```
  Persistence: Migrate from In-Memory DB to PostgreSQL
 
  Authentication: Add JWT middleware to secure API endpoints
@@ -111,5 +117,5 @@ Vivek
 
 Built to explore scalable backend patterns in Go for high-security environments.
 
-
+```
 ---
